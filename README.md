@@ -1,5 +1,7 @@
 # task_manager_app
 
+|| HOW  TO  USE  ||
+
 #step: 1
 Go to the terminal and type npm inti start npm.
 
