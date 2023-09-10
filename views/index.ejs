@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskManager</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>wellcome to TaskManager app</h1>
+      <h2>Todo</h2>
+      <div class="todo">
+        <a href="/new" class="newaTaskBtn">add todo</a>
+        <% todos.forEach(todos =>{ %>
+        <h2><%= todos.title %></h2>
+        <h3><%= todos.content %></h3>
+        <p><%= todos.date %></p>
+        <a href="/edit/<%= todos.id %>" class="edit">Edit</a>
+        <a href="/api/tasks/delete/<%= todos.id %>" class="delete">Delete</a>
+        <% }) %>
+        <hr>
+      </div>
+      <h2>Doing</h2>
+      <div class="doing">
+        <a href="/doing" class="newaTaskBtn">add Doing</a>
+        <% doing.forEach(doing =>{ %>
+        <h2><%= doing.title %></h2>
+        <h3><%= doing.content %></h3>
+        <p><%= doing.date %></p>
+        <a href="/doing/<%= doing.id %>" class="edit">Edit</a>
+        <a href="/api/doing/delete/<%= doing.id %>" class="delete">Delete</a>
+        <% }) %>
+        <hr>
+      </div>
+      <h2>Done</h2>
+      <div class="done">
+        <a href="/done" class="newaTaskBtn">add Done</a>
+        <% done.forEach(done =>{ %>
+        <h2><%= done.title %></h2>
+        <h3><%= done.content %></h3>
+        <p><%= done.date %></p>
+        <a href="/done/<%= done.id %>" class="edit">Edit</a>
+        <a href="/api/done/delete/<%= done.id %>" class="delete">Delete</a>
+        <% }) %>
+      </div>
+    </div>
+  </body>
+</html>

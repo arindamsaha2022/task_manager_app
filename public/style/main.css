@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.cardcontaner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction:row;
+    gap: 5px;
+    align-items: row; /* Center align the container */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h3 {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Buttons */
+.newaTaskBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6e3bae;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.newaTaskBtn:hover {
+    background-color: #9c71d9;
+}
+
+/* Card styling */
+.card {
+    background-color: #d4abff;
+    border: 1px ;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make cards take the full width */
+    max-width: 600px; /* Set a maximum width for better readability on large screens */
+}
+
+/* Links */
+.edit, .delete {
+    display: inline-block;
+    margin-right: 10px;
+    color: #6e3bae;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.edit:hover, .delete:hover {
+    color: #5a2e96;
+}
+
+@media screen and (max-width: 768px) {
+    /* For screens up to 768px wide (typical tablet and mobile) */
+    .container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust the card width and margins for smaller screens */
+    .card {
+        max-width: 100%; /* Cards take full width on mobile */
+        margin-right: 0; /* Remove the right margin to make cards stack vertically */
+    }
+}
