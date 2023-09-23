@@ -17,4 +17,4 @@ Open another terminal by clicking the plus icon (for vs code) and type: node ser
 #step:5 
 Go to your browser type: localhost:3000 now you can use the app
 
-![main page](/Screenshot(3).png)
+
